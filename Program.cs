@@ -4,12 +4,12 @@ public class Program
 {
 	static void Main()	
 	{
-		Console.WriteLine ("Odd/Even checker");		
+		Console.WriteLine("Odd/Even checker");		
 	
 		while (true)	
 		{
 			Console.WriteLine();
-			Console.Write ("Enter number to be checked: ");
+			Console.Write("Enter number to be checked: ");
 			string input = Console.ReadLine();
 
 			if (!int.TryParse(input, out int num))
@@ -18,8 +18,9 @@ public class Program
 				Console.WriteLine("Invalid input. Please enter a whole number.");
 				continue;
 			}
-				
+			
 			long ans = num % 2;
+			
 			if (ans != 0)
 			{
 				Console.WriteLine ("The number is Odd");
