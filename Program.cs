@@ -8,9 +8,17 @@ public class Program
 	
 		while (true)	
 		{
+			Console.WriteLine();
 			Console.Write ("Enter number to be checked: ");
-			long num = long.Parse(Console.ReadLine());
- 	
+			string input = Console.ReadLine();
+
+			if (!int.TryParse(input, out int num))
+			{
+				Console.WriteLine();
+				Console.WriteLine("Invalid input. Please enter a whole number.");
+				continue;
+			}
+				
 			long ans = num % 2;
 			if (ans != 0)
 			{
@@ -44,4 +52,3 @@ public class Program
 		}
 	}
 }
-//Programming lanuage used is C#, using basic language
