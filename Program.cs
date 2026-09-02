@@ -12,7 +12,7 @@ public class Program
 			Console.Write("Enter number to be checked: ");
 			string input = Console.ReadLine();
 
-			if (!int.TryParse(input, out int num))
+			if(!int.TryParse(input, out int num))
 			{
 				Console.WriteLine();
 				Console.WriteLine("Invalid input. Please enter a whole number.");
@@ -21,13 +21,13 @@ public class Program
 			
 			long ans = num % 2;
 			
-			if (ans != 0)
+			if(ans != 0)
 			{
-				Console.WriteLine ("The number is Odd");
+				Console.WriteLine("The number is Odd");
 			}
 			else 
 			{
-				Console.WriteLine ("The number is Even");
+				Console.WriteLine("The number is Even");
 			}
 			AskToExit();
 		}
@@ -35,9 +35,9 @@ public class Program
 		{
 			Console.WriteLine();
 			
-			Console.Write ("Exit program? (Y/N): ");
+			Console.Write("Exit program? (Y/N): ");
 			string exit = Console.ReadLine();
-				if (exit == "N")
+				if(exit == "N")
 				{
 					return;
 				}
@@ -47,7 +47,7 @@ public class Program
 				}
 				else
 				{
-					Console.WriteLine ("Error, please enter [Y] or [N]");
+					Console.WriteLine("Error, please enter [Y] or [N]");
 					AskToExit();
 				}
 		}
